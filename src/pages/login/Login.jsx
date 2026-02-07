@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Logo from "../../assets/vtclogo.jpeg";
 
 function Login() {
@@ -22,7 +23,7 @@ function Login() {
     nav.
     // Handle login logic here
     console.log('Login submitted:', formData);
-    nav('/dashboard');
+     nav('/dashboard');
   };
 
   return (
